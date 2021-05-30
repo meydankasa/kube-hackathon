@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>הוסף חבר לקבוצה</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar animated (ionChange)="search($event)" placeholder="חפש חבר..."></ion-searchbar>
+
+  <ion-list *ngIf="users">
+    <ion-item *ngFor="let user of users">
+        <ion-icon (click)="addUser(user.id,groupId)" slot="end" name="add-circle" color="tertiary"></ion-icon>
+      <ion-avatar slot="start">
+        <img src="../../assets/images/avatar.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{user.firstName}} {{user.lastName}}</h2>
+        <ion-text color="medium">
+          {{user.email}}
+        </ion-text>
+      </ion-label>
+      </ion-item>
+  </ion-list>
+
+</ion-content>

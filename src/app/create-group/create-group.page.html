@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>צור קבוצה חדשה</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #groupForm="ngForm" (ngSubmit)="createGroup(groupForm)">
+    <div class="header">
+      <div class="header-img">
+      <img src="../../assets/images/cam.png"/>
+    </div>
+    </div>
+    <ion-item>
+      <ion-label position="floating">שם קבוצה</ion-label>
+      <ion-input ngModel #groupName="ngModel" name="groupName"></ion-input>
+      <ion-icon slot="start" name="contacts"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>תאריך מפגש</ion-label>
+      <ion-datetime ngModel #dateOfMeetup="ngModel" name="dateOfMeetup" mode="ios"  min="2019-05-30" max="2025" displayFormat="DD/MM/YYYY"></ion-datetime>
+      <ion-icon slot="start" name="calendar"></ion-icon>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">תיאור</ion-label>
+        <ion-textarea ngModel #description="ngModel" name="description"></ion-textarea>
+        <ion-icon slot="start" name="book"></ion-icon>
+      </ion-item>
+    
+    <ion-button type="submit" color="tertiary">שלח</ion-button>
+  </form>
+</ion-content>

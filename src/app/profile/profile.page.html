@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button color="danger" slot="end" (click)="logout()">התנתק</ion-button>
+    
+    <ion-title>
+      פרופיל
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fadeIn">
+  <ion-card>
+    <ion-card-content>
+      <div class="card-header">
+        <div class="header-img">
+          <img src="../../assets/images/avatar.png" />
+        </div>
+      </div>
+      <div class="card-body">
+        <h1>{{user?.displayName}}</h1>
+        <h3>{{user?.email}}</h3>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="#" class="activated">
+      <ion-icon name="wifi" slot="start"></ion-icon>
+      <ion-label>לינק 1 </ion-label>
+    </ion-item>
+
+    <ion-item href="#">
+      <ion-icon name="wine" slot="start"></ion-icon>
+      <ion-label>לינק 2</ion-label>
+    </ion-item>
+
+    <ion-item class="activated">
+      <ion-icon name="warning" slot="start"></ion-icon>
+      <ion-label>לינק 3</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="walk" slot="start"></ion-icon>
+      <ion-label>לינק 4</ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

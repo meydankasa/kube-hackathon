@@ -1,0 +1,53 @@
+
+button{
+    --ion-background-color:var(--ion-color-primary-shade);
+}
+
+ion-icon[name=arrow-forward]{
+    color: rgba(94,53,177,1);
+  }
+
+  ion-avatar img{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
+  }
+
+  ion-content{
+    text-align: right;
+  }
+
+  p, .group-description,h4{
+    // margin: 5px 15px;
+    font-size: 16px;
+  }
+
+  .meetup-date{
+    border-top:1px solid silver;
+  }
+
+  ion-label{
+    font-size: 20px!important;
+    font-weight: 600!important;
+  }
+
+  ion-list{
+    padding-top: 0;
+  }
+
+  ion-card-content{
+    padding-top:0;
+    padding-bottom: 0;
+  }
+  ion-card{
+    // margin: 20px 10px;
+    --ion-background-color: white;
+    background-color: white;
+  }
+  
+  .sc-ion-searchbar-md-h { 
+    --background: white;
+}
+
+ion-badge{
+  text-align: left;
+}
+

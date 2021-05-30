@@ -1,0 +1,133 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .hide-form{
+    display: none;
+  }
+
+  .sign-form a{
+    position: relative;
+    left:0;
+  }
+
+  .toast-container {
+    text-align: right;
+  }
+
+  .login-card {
+    cursor: default;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: sans, sans-serif;
+    color: #fff;
+    
+    background: radial-gradient(circle at left, rgba(249, 155, 155, 0.3) 35%, rgba(249, 155, 155, 0.2) 35%, rgba(249, 155, 155, 0.2) 50%, rgba(249, 155, 155, 0.1) 50%, rgba(249, 155, 155, 0.1) 65%, transparent 65%, transparent) -120px 50%/120% no-repeat, linear-gradient(to top, #311B92, #673AB7);
+    //background: radial-gradient(circle at left, rgba(249,155,155, 0.3) 35%, rgba(249,155,155, 0.2) 35%, rgba(249,155,155, 0.2) 50%, rgba(249,155,155, 0.1) 50%, rgba(249,155,155, 0.1) 65%, transparent 65%, transparent) -120px 50%/120% no-repeat, linear-gradient(to top, #F75050, #F98A8A);
+    //background: radial-gradient(circle at left, rgba(247,129,129, 0.3) 35%, rgba(247,129,129, 0.2) 35%, rgba(247,129,129, 0.2) 50%, rgba(247,129,129, 0.1) 50%, rgba(247,129,129, 0.1) 65%, transparent 65%, transparent) -120px 50%/120% no-repeat, linear-gradient(to top, #B70505, #F06262);
+    // background: radial-gradient(circle at left, rgba(12,209,232, 0.3) 35%, rgba(12,209,232, 0.2) 35%, rgba(12,209,232, 0.2) 50%, rgba(12,209,232, 0.1) 50%, rgba(12,209,232, 0.1) 65%, transparent 65%, transparent) -120px 50%/120% no-repeat, linear-gradient(to top, #6610f2, #007bff);
+    padding-top: 5%;
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+
+
+ .btn-primary{
+   border-radius:50px;
+   width: 100%;
+   margin-top:20px;
+   background-color: rgba(49,27,146,1);
+ }
+
+ .switch-form-btn{
+   background-color: transparent;
+ }
+
+  h1{
+    margin-bottom: 35px;
+    font-family: 'Lobster', cursive;
+    font-size:60px;
+  }
+  
+  form{
+      width:80%;
+      margin: auto;
+      // padding: 20px 0;
+  }
+
+  .form-container{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 10px;
+  }
+
+  ion-fab-button{
+    position: fixed;
+    left: calc(50% - 28px );
+  }
+
+  .logo{
+      width:70px;
+      height: 70px;
+      margin: 20px auto 0;
+      
+      box-shadow: 0 1px 6px 0 rgba(32,33,36,0.4);
+     border-radius: 50%;
+  }
+
+  .logo img{
+      width:100%;
+      height: 100%; 
+      animation: App-logo-spin infinite 20s linear;
+    
+  }
+
+  span{
+    margin-right: 25px;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes reverse-spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+.invalid-input{
+  border: 2px solid red;
+}
+
+.valid-input{
+  border: 2px solid greenyellow;
+}
+ion-item{
+  --background:transparent;
+  --color: white;
+  --border-color: white;
+}
+
+.form-group{
+  margin-bottom: 0;
+}
+
+.label-floating.sc-ion-label-md-h {
+  transform-origin: right top;
+}

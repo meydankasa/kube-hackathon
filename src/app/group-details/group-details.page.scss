@@ -1,0 +1,183 @@
+.group-header{
+    background-image: url('../../assets/images/group-img.jpg');
+    background-size: cover;
+    height: 25vh;
+}
+
+.header-title{
+    bottom: -80%;
+    text-align: right;
+    color: white;
+    padding-right: 10px;
+    background-color: rgba(99,60,224,1);
+}
+
+.header-title h2{
+    margin-bottom: 0;
+}
+
+ion-list{
+    padding:0;
+}
+
+ion-list-header{
+    font-weight: 700;
+}
+
+.back-icon{
+    font-size: 30px;
+}
+// ion-card{
+//     text-align: center;
+//     background-image: url('../../assets/images/moneybackground.png');
+//     background-size: cover;
+//   }
+  
+.btn{
+    width:50%;
+    border-radius: 0;
+    margin: 1px;
+}
+  ion-item{
+    --background: white;
+  }
+
+  ion-tab-bar{
+    --ion-background-color:white;
+  }
+  
+#top-bar {
+    height: 70px;
+    background: #0076bf;
+    margin: 0 0 35px;
+    background-image: url(https://alliedportal.staging.wpengine.com/wp-content/uploads/2018/04/Allied-Horizontal-Black-Logo-e1524773303502.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    button {
+      float: right;
+      margin-top: 16px;
+      background-color: rgba(248, 249, 250, 0.59);
+      color: #fff;
+      border-color: transparent;
+    }
+  }
+  .active, .delivered, .completed {
+      
+  }
+  .card {
+      min-width: 300px;
+      max-width: 500px;
+      margin-top: 10px;
+    min-height: 148px;
+      background: #fff;
+    border-radius: 8px;
+      border-width: 0;
+    box-shadow: 0 30px 60px 0 #ccc;
+    transition: .5s;
+    &:hover {
+      box-shadow: 0 10px 50px 0 #aaa;
+      cursor: pointer;
+    }
+      .card-subtitle {
+          font-weight: 100;
+      }
+      .card-balance {
+          float: left;
+          p {
+              margin-bottom: 0;
+            font-size: 12px;
+            color: 212429;
+            text-align: right;
+            letter-spacing: .5px;
+              span{
+                font-size: 22px;
+                color: #0076bf;
+                letter-spacing: 0;
+              }
+          }
+      }
+      .card-alert {
+        position: absolute;
+        margin-top: 15px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: red;
+        float: left;
+          p {
+              text-align: center;
+            height: 40px;
+            padding-top: 8px;
+            color: #fff;
+            text-shadow: 0 5px 5px #555;
+          }
+      }
+  }
+  .active .card {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      border-top-width: 8px;
+      border-top-color: rgba(99, 60, 224, 0.7)0076bf;
+      
+  }
+  .delivered .card {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      border-top-width: 8px;
+      border-top-color: orange;
+      margin-bottom: 25px;
+  }
+  .completed .card {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      border-top-width: 8px;
+      border-top-color: green;
+      
+      .card-balance {
+          display: none;
+      }
+  }
+
+  // h4{
+  //     text-align: right;
+  // }
+  .card-title{
+      text-align: right;
+  }
+.paypal{
+  width: 83px;
+    margin: auto;
+}
+
+.visa{
+  width: 50px;
+    margin: auto;
+}
+
+h1{
+  margin: 0;
+}
+
+// .pay-left{
+//   border-bottom-left-radius: 50px;
+// }
+// .pay-right{
+//   border-bottom-right-radius: 50px;
+// }
+
+.balance{
+  background-color: white;
+  text-align: center;
+}
+
+.d-flex span{
+  font-size: 24px;
+}
+
+.balance span {
+  color: green;
+}
+
+.balance h2{
+  margin: 0;
+}

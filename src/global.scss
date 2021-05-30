@@ -1,0 +1,106 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.text-right{
+  text-align: right;
+}
+
+body{
+  --ion-background-color: #f4f5f8;
+}
+
+
+ion-toolbar{
+    --ion-background-color:#633ce0;
+    color:white;
+    text-align: right;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .tab-selected {
+    color: #7044ff;
+}
+
+ion-icon[name=wifi]{
+  color:#3880ff;
+}
+
+ion-icon[name=bluetooth]{
+  color:#7044ff;
+}
+
+ion-icon[name=call]{
+  color:#10dc60;
+}
+
+ion-icon[name=wine]{
+  color:#3171e0;
+}
+
+ion-icon[name=pin]{
+  color:#28a745;
+}
+
+ion-icon[name=warning]{
+  color:#dc3545;
+}
+
+ion-icon[name=airplane]{
+  color:#3880ff;
+}
+
+ion-tab-bar{
+  --ion-background-color:white;
+}
+
+ion-item,ion-card{
+  --background: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  background-color: transparent!important;
+  transition: background-color 5000s ease-in-out 0s;
+}

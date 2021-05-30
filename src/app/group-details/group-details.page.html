@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-icon  name="arrow-back"></ion-icon> -->
+    <ion-icon [routerLink]="['/tabs/groups/']" class="back-icon" slot="start" name="arrow-round-back"></ion-icon>
+    <ion-title>{{group?.groupName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <div class="group-header">
+
+    </div>
+    <!-- <div class="card-deck active">
+        <div class="card">
+          <div class="card-body">
+          <h5 class="card-title">יתרת קבוצה</h5>
+           
+          <div class="card-balance">
+            <p><span>&#8362;108,500.00</span><br>
+              Remaining balance
+            </p>
+          </div>
+          </div>
+        </div>
+      </div> -->
+      <div>
+        <div class="balance">
+            <h2> יתרה: <span>&#8362;20000</span></h2>
+        </div>
+        <div class="d-flex">
+            <button class="btn btn-primary flex-fill pay-right"><img class="paypal" src="../../assets/images/paypal2.png"/></button>
+            <button class="btn btn-primary flex-fill pay-left"><img class="visa" src="../../assets/images/visa.png"/></button>
+          </div>
+      </div>
+
+
+    <div class="chart-container">
+      <ion-list>
+        <ion-list-header color="light">
+          <ion-label>משתתפים בקבוצה</ion-label>
+        </ion-list-header>
+        <ion-item *ngFor="let item of members" class="ion-activatable">
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+          <ion-avatar slot="start">
+            <ion-ripple-effect></ion-ripple-effect>
+            <img src="../../assets/images/avatar.png">
+          </ion-avatar>
+          <ion-label>
+            {{item.firstName}} {{item.lastName}}
+            <ion-text color="medium">
+              <h4>{{item.email}}</h4>
+            </ion-text>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button *ngIf="group" [routerLink]="['/tabs/groups/add-user/',{groupId:group.id}]" color="tertiary">
+      <ion-icon name="person-add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

@@ -1,0 +1,10 @@
+<ion-app>
+  <!-- Loader -->
+  <div *ngIf="loader">
+    <app-loader></app-loader>
+  </div>
+  <!-- Router -->
+  <div>
+    <ion-router-outlet class="fadeIn" *ngIf="!loader"></ion-router-outlet>
+  </div> 
+</ion-app>
